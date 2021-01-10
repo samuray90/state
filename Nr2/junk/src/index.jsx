@@ -3,7 +3,7 @@ import { render } from "react-dom";
 import { App } from "./components/app";
 import "./index.css";
 
-const here = document.querySelector("#here");
+const here = document.getElementById("#here");
 
 const app = <App />;
 
