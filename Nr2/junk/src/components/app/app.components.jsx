@@ -1,12 +1,13 @@
 import React from "react";
 import "./app.style.js";
+import { MovieList } from "../movie-list/";
 
 function App() {
   return (
     <div className="App">
-      <h1>qwdaszx</h1>
+      <MovieList />
     </div>
   );
 }
 
-export default App;
+export { App };
