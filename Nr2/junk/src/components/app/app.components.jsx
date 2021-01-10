@@ -1,12 +1,12 @@
 import React from "react";
-import "./app.style.js";
 import { MovieList } from "../movie-list/";
+import { StyledAplication } from "./app.style";
 
 function App() {
   return (
-    <div className="App">
+    <StyledAplication>
       <MovieList />
-    </div>
+    </StyledAplication>
   );
 }
 
