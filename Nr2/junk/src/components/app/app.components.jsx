@@ -2,6 +2,7 @@ import React from "react";
 import { MovieList } from "../movie-list/";
 import { StyledAplication } from "./app.style";
 import { Nav } from "../nav/nav.components";
+import { AddMovie } from "../addMovie";
 
 const App = () => {
   return (
@@ -9,6 +10,7 @@ const App = () => {
     <StyledAplication>
       <MovieList />
       <Nav />
+      <AddMovie />
     </StyledAplication>
   );
 };
