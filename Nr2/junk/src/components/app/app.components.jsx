@@ -1,16 +1,14 @@
 import React from "react";
 import { MovieList } from "../movie-list/";
-import { MovieProvider } from "../movie.context";
 import { StyledAplication } from "./app.style";
 
-function App() {
+const App = () => {
   return (
-    <MovieProvider>
-      <StyledAplication>
-        <MovieList />
-      </StyledAplication>
-    </MovieProvider>
+    // the MovieList has a MovieState which is in movie.context
+    <StyledAplication>
+      <MovieList />
+    </StyledAplication>
   );
-}
+};
 
 export { App };

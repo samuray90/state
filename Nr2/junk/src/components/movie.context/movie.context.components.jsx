@@ -1,6 +1,6 @@
-import React, { useState, createContext } from "react";
+import React, { useState, createContext, useContext } from "react";
 
-export const MovieContext = createContext();
+const MovieContext = createContext();
 
 const MovieProvider = (props) => {
   const [movies, setMovies] = useState([
@@ -29,6 +29,7 @@ const MovieProvider = (props) => {
     </div>
   );
 };
+const MovieState = () => useContext(MovieContext);
+export { MovieProvider, MovieState };
 
-export { MovieProvider };
-export { MovieContext };
+// here you make the const with the MovieState from the other component make a function with it to get useContext(MovieContext) and call with it the MovieContext
