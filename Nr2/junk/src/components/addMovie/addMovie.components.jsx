@@ -1,6 +1,9 @@
 import React, { useState, useContext } from "react";
 import { MovieList } from "../movie-list";
 import { MovieState } from "../movie.context/movie.context.components";
+import { StyledForm } from "./addMovie.style";
+import { StyledButton } from "./addMovie.style";
+import { StyledInput } from "./addMovie.style";
 
 const AddMovie = () => {
   const [name, setName] = useState("");
@@ -22,11 +25,23 @@ const AddMovie = () => {
   };
   return (
     // here you execute the constant
-    <form onSubmit={addMovie}>
-      <input type="text" name="name" value={name} onChange={updateName} />
-      <input type="text" name="price" value={price} onChange={updatePrice} />
-      <button>Submit</button>
-    </form>
+    <StyledForm>
+      <form onSubmit={addMovie}>
+        <StyledInput
+          type="text"
+          name="name"
+          value={name}
+          onChange={updateName}
+        />
+        <StyledInput
+          type="text"
+          name="price"
+          value={price}
+          onChange={updatePrice}
+        />
+        <StyledButton>Add another movie</StyledButton>
+      </form>
+    </StyledForm>
   );
 };
 
