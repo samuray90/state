@@ -3,6 +3,7 @@ import { MovieList } from "../movie-list/";
 import { StyledAplication } from "./app.style";
 import { Nav } from "../nav/nav.components";
 import { AddMovie } from "../addMovie";
+import { OtherApp } from "../otherState";
 
 const App = () => {
   return (
@@ -11,6 +12,7 @@ const App = () => {
       <MovieList />
       <Nav />
       <AddMovie />
+      <OtherApp />
     </StyledAplication>
   );
 };

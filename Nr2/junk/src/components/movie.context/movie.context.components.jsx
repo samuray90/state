@@ -31,5 +31,5 @@ const MovieProvider = (props) => {
 };
 const MovieState = () => useContext(MovieContext);
 export { MovieProvider, MovieState };
-
+// the State here exists but you need to push it trough the constant so it can be used everywhere
 // here you make the const with the MovieState from the other component make a function with it to get useContext(MovieContext) and call with it the MovieContext
