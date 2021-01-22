@@ -6,7 +6,7 @@ import { AddMovie } from "../addMovie";
 import { OtherApp } from "../otherState";
 import { Container } from "../container";
 
-const App = () => {
+const App = ({ task, onDelete }) => {
   return (
     // the MovieList has a MovieState which is in movie.context
     <StyledAplication>

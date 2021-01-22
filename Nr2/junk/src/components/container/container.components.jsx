@@ -13,8 +13,8 @@ const Container = ({ title }) => {
         border: "5px solid steelblue",
         margin: "30px auto",
         borderRadius: "15px",
+        paddingTop: "70px",
       }}
-      className="container"
     >
       <header style={{ display: "flex" }}>
         <h1>{title}</h1>

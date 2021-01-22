@@ -2,11 +2,15 @@ import React, { useState } from "react";
 import { FaTimes } from "react-icons/fa";
 
 const Task = () => {
+  const deleteTask = (id) => {
+    setTasks(tasks.filter((task) => task.id !== id));
+    console.log("deleted");
+  };
   const [tasks, setTasks] = useState([
     { id: 1, text: "Football", reminder: true, day: " -March 22th at 20:30" },
     {
       id: 2,
-      text: "Meeting for Lunch",
+      text: "Lunch Meeting",
       day: " -May 4th at 16:45",
       reminder: true,
     },
@@ -17,6 +21,7 @@ const Task = () => {
       day: " -July 25th at 00:00",
     },
   ]);
+
   return (
     <div>
       {tasks.map((task) => (
@@ -30,12 +35,14 @@ const Task = () => {
         >
           {task.text}
           <FaTimes
+            onClick={() => deleteTask(task.id)}
             style={{
               color: " red",
               paddingLeft: "370px",
               position: "absolute",
               display: "flex",
               margin: "-8px 57px",
+              cursor: "pointer",
             }}
           />
           <p>{task.day}</p>
