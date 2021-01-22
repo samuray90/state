@@ -1,8 +1,9 @@
 import React, { useState } from "react";
+import { FaTimes } from "react-icons/fa";
 
 const Task = () => {
   const [tasks, setTasks] = useState([
-    { id: 1, text: "Football", reminder: true, day: " -March 22th at 2:30" },
+    { id: 1, text: "Football", reminder: true, day: " -March 22th at 20:30" },
     {
       id: 2,
       text: "Meeting for Lunch",
@@ -19,12 +20,27 @@ const Task = () => {
   return (
     <div>
       {tasks.map((task) => (
-        <h3 key={task.id} style={{ margin: "20px" }}>
+        <h3
+          key={task.id}
+          style={{
+            margin: "20px",
+            backgroundColor: "#cee1f4",
+            justifyContent: "center",
+          }}
+        >
           {task.text}
-          {task.day}
+          <FaTimes
+            style={{
+              color: " red",
+              paddingLeft: "370px",
+              position: "absolute",
+              display: "flex",
+              margin: "-8px 57px",
+            }}
+          />
+          <p>{task.day}</p>
         </h3>
       ))}
-      <h4></h4>
     </div>
   );
 };
