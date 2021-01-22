@@ -4,6 +4,7 @@ import { StyledAplication } from "./app.style";
 import { Nav } from "../nav/nav.components";
 import { AddMovie } from "../addMovie";
 import { OtherApp } from "../otherState";
+import { Container } from "../container";
 
 const App = () => {
   return (
@@ -13,6 +14,7 @@ const App = () => {
       <Nav />
       <AddMovie />
       <OtherApp />
+      <Container />
     </StyledAplication>
   );
 };
