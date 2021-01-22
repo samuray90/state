@@ -2,10 +2,15 @@ import React, { useState } from "react";
 import { FaTimes } from "react-icons/fa";
 
 const Task = () => {
+  //delete the task constant//
+
   const deleteTask = (id) => {
     setTasks(tasks.filter((task) => task.id !== id));
     console.log("deleted");
   };
+
+  //the state
+
   const [tasks, setTasks] = useState([
     { id: 1, text: "Football", reminder: true, day: " -March 22th at 20:30" },
     {
@@ -21,6 +26,8 @@ const Task = () => {
       day: " -July 25th at 00:00",
     },
   ]);
+
+  //the return
 
   return (
     <div>
