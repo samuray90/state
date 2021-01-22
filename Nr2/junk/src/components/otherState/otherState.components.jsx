@@ -7,7 +7,15 @@ function OtherApp() {
   return (
     <StyledMain>
       <section className="container">
-        <h3>{people.length}Birthdays today</h3>
+        <h3
+          style={{
+            fontFamily: "cursive",
+            display: "flex",
+            justifyContent: "center",
+          }}
+        >
+          {people.length} Birthdays today
+        </h3>
         <List people={people} />
         <button onClick={() => setPeople([])}>clear all</button>
       </section>
@@ -46,8 +54,8 @@ export const List = ({ people }) => {
               alt={name}
             />
             <div>
-              <h4>{name}</h4>
-              <p>{age} years</p>
+              <h4 style={{ padding: "2px", paddingLeft: "5px" }}>{name}</h4>
+              <p style={{ paddingLeft: "5px" }}>{age} years</p>
             </div>
           </article>
         );

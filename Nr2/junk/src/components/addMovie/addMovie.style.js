@@ -2,7 +2,7 @@ import styled from "styled-components";
 
 export const StyledForm = styled.div`
   display: flex;
-  height: 65px;
+  height: 165px;
   width: 45px;
   border: none;
   position: relative;
@@ -20,6 +20,7 @@ export const StyledButton = styled.button`
   border-style: none;
   font-family: cursive;
   background: cornflowerblue;
+
   margin: 10px;
   width: 198px;
 `;

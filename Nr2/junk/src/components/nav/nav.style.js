@@ -7,4 +7,8 @@ export const StyledGuy = styled.div`
   margin-top: 61px;
   background: darkgray;
   font-family: cursive;
+  display: flex;
+  border-radius: 20px;
+  width: 280px;
+  background-color: coral;
 `;

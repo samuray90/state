@@ -5,7 +5,7 @@ import { StyledGuy } from "./nav.style";
 
 const Nav = () => {
   const [movies, setMovies] = MovieState(MovieList);
-  return <StyledGuy>Movie Colection : {movies.length}</StyledGuy>;
+  return <StyledGuy> Movie Colection : {movies.length}</StyledGuy>;
 };
 
 // do the components folder, after make a constant which will use the MovieState declared before
