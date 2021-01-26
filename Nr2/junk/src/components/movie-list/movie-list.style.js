@@ -7,7 +7,7 @@ export const StyledMovie = styled.div`
   justify-content: center;
   align-items: center;
   color: #000;
-  font-family: cursive;
+  font-family: sans-serif;
   justify-content: space-around;
   list-style-type: none;
   font-size: 20px;

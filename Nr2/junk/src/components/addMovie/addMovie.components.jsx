@@ -39,7 +39,7 @@ const AddMovie = () => {
           value={price}
           onChange={updatePrice}
         />
-        <StyledButton>Add another movie</StyledButton>
+        <StyledButton>Add movie</StyledButton>
       </form>
     </StyledForm>
   );

@@ -2,7 +2,7 @@ import React from "react";
 import PropTypes from "prop-types";
 import { Task } from "../task";
 
-const Container = ({ title }) => {
+const Container = ({ title, tasks, deleteTask }) => {
   return (
     <div
       style={{
@@ -30,7 +30,8 @@ const Container = ({ title }) => {
           Add
         </button>
       </header>
-      <Task />
+
+      <Task tasks={tasks} onDelete={deleteTask} />
     </div>
   );
 };

@@ -2,13 +2,14 @@ import styled from "styled-components";
 
 export const StyledGuy = styled.div`
   font-size: 25px;
-  color: yellow;
+  color: #000;
   font-weight: bold;
   margin-top: 61px;
-  background: darkgray;
-  font-family: cursive;
+  font-family: sans-serif;
   display: flex;
-  border-radius: 20px;
-  width: 280px;
-  background-color: coral;
+  width: 260px;
+  border: 3px solid orchid;
+  margin: 5px;
+  border-radius: 5px;
+  background-color: lightblue;
 `;
